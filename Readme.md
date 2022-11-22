@@ -18,3 +18,14 @@
 - Tareas del dia
 - Finalizar HTML
 - Comenzar y en lo posible terminar el CSS a lo largo del día
+
+#### Actualizacion del día
+
+- Se realiza el encabezado tipo hamburguesa. Luego se comienza con seccion uno.
+- Me encuentro con problemas al realizar el posicionamiento de imagenes.
+- Seccion 2: Ready
+
+#### Pasos a seguir
+
+- Continuar avanzando con secciones restantes.
+- Preguntar dudas pendientes en clase de miercoles
