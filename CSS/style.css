@@ -7,12 +7,20 @@
     margin: 0;
     padding: 0;
 }
+:root{
+  --titulosColor: #292e47,
+  --linksColor: #072ac8,
+  --parrafosColor: #6b708d
 
+}
 
 body {
     font-family: "Roboto", sans-serif;
     color: #1a1a1a;
     background-color: #f2f4fc;
+    font-size: 16px;
+    margin-left: 80px;
+    width: 1200px;
   }
 
   
@@ -23,10 +31,10 @@ body {
     text-align: center;
   }
   
-  html, body {
+  /* html, body {
     margin: 0;
     height: 100%;
-  }
+  } */
   
   * {
     font-family: "Raleway";
@@ -110,6 +118,10 @@ body {
     transform: rotate(-405deg);
   }
   
+.navbar-logo img{
+  width: 60px;
+}
+
   .home{
     text-decoration: none;
     color: lightblue;
@@ -140,32 +152,38 @@ body {
     display:  flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 100px;
+    width: 1200px;
   }
   .emp-text{
-    margin-left: 100px;
-    width: 40%;
+    
+    margin-right: 0%;
+    width: 45%;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     flex-direction: column;
     flex-wrap: wrap;
   }
   .emp-text h1{
+    color: var(--parrafosColor);
     font-size: 4rem;
     padding: 20px 10px;
   }
   .emp-text .text{
+    color: var(--parColor);
     font-size: 1.7rem;
     padding: 20px 10px;
+    color: var(--parColor);
   }
   .empower-btn{
     margin-top: 30px;
   }
   .empower-btn-1{
   text-decoration: none;
-  color: grey;
-  font-size: 1rem;
+  color: var(--parColor);
+  font-size: 17px;
+  font-weight: 500;
   margin-right: 10px;
   padding: 0px 20px 0px 10px;
   /* margin: 60px 0; */
@@ -175,19 +193,20 @@ body {
   text-decoration: none;
   background-color: #072ac8;
   color: grey;
-  font-size: 1rem;
+  font-size: 17px;
+  font-weight: 500;
   padding: 10px 20px 10px 10px;
   /* margin: 60px 0; */
 
 }
 
   .emp-img{
-    width: 40%;
+    width: 45%;
+    position: relative;
   }
   .emp-img-hero-image{
     width: 100%;
-    display:inline-block ;
-    position: relative;
+  
   }
 
   .card-1 {
@@ -196,8 +215,8 @@ body {
     height: 200px;
     background-size: cover;
     position: absolute;
-    bottom: 390px;
-    right: 360px;
+    top: 0%;
+    left: 0%;
     /* display: none; */
     /* z-index: 1; */
   }
@@ -207,8 +226,8 @@ body {
     height: 200px;
     background-size: cover;
     position: absolute;
-    bottom: -20px;
-    right: 0px;
+    bottom: 0%;
+    right: -10%;
     /* z-index: 1; */
   }
 
@@ -220,7 +239,7 @@ body {
   display: flex;
   flex-direction: row;
   
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .logo-clientes{
   width: 400px;
@@ -230,16 +249,102 @@ body {
   width: 100px;
 }
 
-/* SECCION 3 : Proyectos Recientes */
+/* SECCION 4 : Proyectos Recientes */
 
 .recent-projects{
-  margin: 0 50px;
-  /* width: 50%; */
+ margin-top: 50px; 
+}
+.heading{
+  color: var(--parColor);
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
 
+.item-{
+  margin: 0 20px;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  
+  justify-content: flex-start;
+}
+.item-text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+.item-text h1{
+  font-size: 24px;
+}
+.item-text p, .item-text a {
+  padding-top: 20px;
+}
+.imgP{
+  width: 340px;
+  height: 240px;
+  flex-wrap: wrap;
+  
+}
 
-
+/* SECCION 4 : Testimonio Clientes */
+.opinions{
+  position: relative;
+  width: 1200px;
+  height: 630px;
+  margin-top: 100px;
+  background-color: #292e47;
+  background-image: url(../IMG/project-assets/testimonial-section/orbit.png);
+  background-position: 0px 0px;
+  background-size: contain;
+}
+.emoji-top-left {
+  position: absolute;
+  background-image: url("../IMG/project-assets/testimonial-section/memoji-1.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%
+}
+.emoji-top-right {
+  position: absolute;
+  background-image: url("../IMG/project-assets/testimonial-section/memoji-3.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  right: 0%
+}
+.emoji-bottom-left {
+  position: absolute;
+  background-image: url("../IMG/project-assets/testimonial-section/memoji-1.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0%;
+  left: 0%
+}
+.emoji-bottom-right {
+  position: absolute;
+  background-image: url("../IMG/project-assets/testimonial-section/memoji-1.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0%;
+  right: 0%
+}
   @media (max-width: 700px) {
     .menu-button-container {
       display: flex;
@@ -339,5 +444,5 @@ body {
 
 
 img {
-    width: 50px;
+    width: 350px;
 }
