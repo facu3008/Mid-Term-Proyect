@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
-    <section class="top-nav">
+    <section id="pagina" class="top-nav">
       <div>
         <a href="#imagen" class="navbar-logo"
           ><img src="../IMG/project-assets/logos/circle.svg" alt="logo circle"
@@ -24,7 +24,9 @@
 
         <li><a href="#Services" class="proy-serv">Services</a></li>
       </ul>
-      <a href="/contact-us" class="btn-contact">Contact Us</a>
+      <a href="./HTML/Form.html" class="btn-contact" target="_blank"
+        >Contact Us</a
+      >
     </section>
 
     <div class="empower">
@@ -132,7 +134,6 @@
     </div>
 
     <div class="opinions">
-      
       <div class="testimonios">
         <h3>Hear What Our Clients Have to Say</h3>
         <p>
@@ -158,53 +159,86 @@
       <div class="emoji-bottom-left"></div>
       <div class="emoji-bottom-right"></div>
     </div>
-    
-    <div class="services">
+
+    <div id="Services" class="services">
       <h1 class="heading">Our Services</h1>
-      <div class="services-grid">
+      <div class="services-flex">
         <div class="services-container">
-          <h1>User Interface Design</h1>
-           <p>Circle provides you with a stunning user interface design that
-            is accessible to everyone.</p>
-           <a href="" class="text-link">Learn More</a>
+          <div class="services-icon">
+            <img
+              src="./IMG/project-assets/services-section/icons/1.svg"
+              alt=""
+            />
+          </div>
+          <div class="services-text">
+            <h1>User Interface Design</h1>
+            <p>
+              Circle provides you with a stunning user interface design that is
+              accessible to everyone.
+            </p>
+            <a href="" class="text-link">Learn More</a>
+          </div>
         </div>
         <div class="services-container">
-          <h1>User Experience Design</h1>
-           <p>Circle always focuses on delivering the best user experience to
-            your customers.</p>
-           <a href="" class="text-link">Learn More</a>
+          <div class="services-icon">
+            <img
+              src="./IMG/project-assets/services-section/icons/2.svg"
+              alt=""
+            />
+          </div>
+          <div class="services-text">
+            <h1>User Experience Design</h1>
+            <p>
+              Circle always focuses on delivering the best user experience to
+              your customers.
+            </p>
+            <a href="" class="text-link">Learn More</a>
+          </div>
         </div>
         <div class="services-container">
-          <h1>Application Development</h1>
-           <p>We develop high-quality mobile and web applications using the
-            latest technology stack.</p>
-           <a href="" class="text-link">Learn More</a>
+          <div class="services-icon">
+            <img
+              src="./IMG/project-assets/services-section/icons/3.svg"
+              alt=""
+            />
+          </div>
+          <div class="services-text">
+            <h1>Application Development</h1>
+            <p>
+              We develop high-quality mobile and web applications using the
+              latest technology stack.
+            </p>
+            <a href="" class="text-link">Learn More</a>
+          </div>
         </div>
       </div>
+    </div>
 
-
-        
-          
     <div class="questions">
-
-        <h1 class="heading">Do you have any questions?</h1>
-        <p>Let us help you!</p>
-        <div class="email">
-          <form action="">
-            <div class="email-icon"></div>
-            <input type="email" class="email-input" maxlength="250px" placeholder="Enter your email" required>
-            <input type="submit" value="Suscribe" class="subscribe">
-
-
-
-
-        </form></div>
-      
+      <h1 class="heading">Do you have any questions?</h1>
+      <p>Let us help you!</p>
+      <div class="email">
+        <form action="">
+          <div class="email-icon">
+            <!-- <img src="./IMG/project-assets/newsletter/icon/mail.svg" alt="" /> -->
+          </div>
+          <input
+            type="email"
+            class="email-input"
+            maxlength="250px"
+            placeholder="Enter your email"
+            required
+          />
+          <input type="submit" value="Suscribe" class="subscribe" />
+        </form>
+      </div>
     </div>
     <footer class="footer">
       <div class="content">
         <div class="content-img"></div>
-        <div class="content-text">2972 Westheimer Rd. Santa Ana, Illinois 85486</div>
+        <div class="content-text">
+          2972 Westheimer Rd. Santa Ana, Illinois 85486
+        </div>
       </div>
       <div class="footer-links">
         <div><a href="#" class="footer-link">Team</a></div>
@@ -213,11 +247,6 @@
         <div><a href="#" class="footer-link">Press</a></div>
         <div><a href="#" class="footer-link">Poyects</a></div>
         <div><a href="#" class="footer-link">Privacy Policy</a></div>
-        
-        
-        
-        
-        
       </div>
     </footer>
 

@@ -1,6 +1,9 @@
 /* google fonts import  - ROBOTO */
 @import url("'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
+
 /* CSS RESET */
 * {
     box-sizing: border-box;
@@ -12,7 +15,7 @@
 :root{
   --titulosColor: #292e47,
   --linksColor: #072ac8,
-  --parrafosColor: #6b708d
+  --parrafosColor: #6b708d,
   --back-color: #292e47;
 
 }
@@ -147,6 +150,8 @@ body {
     color: white;
   }
 
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
 
 
 /* SECCION 2 : EMPOWER */
@@ -155,7 +160,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 100px 0 0 50px;
+    margin: 100px auto;
     
     width: 1200px;
     /* padding: 0 50px; */
@@ -253,12 +258,13 @@ body {
   width: 100px;
   margin: 0 10px;
 }
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 4 : Proyectos Recientes */
 
 .recent-projects{
- margin-top: 50px;
- margin: 100px 50px 0;
+  margin: 100px 50px 0;
  /* padding: 0 50px;  */
 }
 .heading{
@@ -302,11 +308,13 @@ body {
   flex-wrap: wrap;
   
 }
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 4 : Testimonio Clientes */
 .opinions{
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   height: 630px;
   margin-top: 100px;
   background-color: #292e47;
@@ -321,6 +329,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 .testimonios h3{
   font-weight: bold;
@@ -336,7 +345,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
-  margin: 60px 0;
+  margin: 60px auto;
   line-height: 30px;
   max-width: 560px;
 }
@@ -415,33 +424,64 @@ body {
   margin-right: 10%;
 }
 
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 5 : Nuestros Servicios */
 .services{
-  
   margin: 100px 50px 0;
+  
+  
 
 }
 .services .heading{
   color: var(--titulosColor);
 }
-.services-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: auto auto auto;
-  margin-top: 70px;
-  grid-column-gap: 40px;
-  grid-row-gap: 16px;
+
+.services-flex{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
 }
+
 .services-container{
+  display: flex;
   width: auto;
-  height: auto;
-  background-color: white;
-  border: 1px solid black;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  /* height: auto; */
+  /* background-color: white; */
+  /* border: 1px solid black; */
   margin-bottom: 30px;
 }
 
+.services-icon img{
+  width: 50px;
+  height: 50px;
+  margin: 60px;
+  flex-wrap: wrap;
+}
 
+.services-text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 350px;
+}
+.services-text h1{
+  font-size: 24px;
+}
+.services-text p{
+  margin-top: 30px;
+}
+
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 6 : Questions */
 
@@ -453,20 +493,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 0 50px; */
+  margin-top: 100px;
+  padding: 50px ;
 }
 .questions p{
   font-size: 17px;
   color: var(--parrafosColor);
   margin-bottom: 40px;
 }
+.email{
+  position: relative;
+}
+.email-icon{
+  width: 30px;
+    height: 30px;
+
+    position: absolute;
+    background-image: url(../IMG/project-assets/newsletter/icon/mail.svg);
+    left: 1%;
+    bottom: 25%;
+    
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
 
 .email-input{
   width: 400px;
   height: 60px;
-  padding-left: 20px;
+  padding-left: 40px;
   font-size: 17px
 }
+
 
 .subscribe{
   width: 200px;
@@ -475,6 +532,9 @@ body {
   background-color: blue;
   color: white;
 }
+
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 7 : Footer */
 
@@ -485,7 +545,9 @@ body {
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
+  padding: 0 10px;
   padding-bottom: 100px;
+  margin-top: 80px;
 }
 
 .content{
@@ -534,9 +596,87 @@ body {
 
 }
 
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
+
+/* FORMULARIO */
+
+
+.formulario{
+  width: 80%;
+  margin: 30px auto;
+  
+}
+.formulario form{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.titulo h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.name, .email, .phone, .message{
+  color: #6b708d;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.name input, .email input, .phone input, .message textarea{
+  color: #6b708d;
+  font-size: 15px;
+  font-weight: 400;
+  /* width: 100%; */
+  height: 70px;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(107, 112, 141, 0.1);
+  border: none;
+}
+.name input, .message textarea {
+width: 100%;
+}
+.email-phone{
+display: flex;
+justify-content: space-between;
+width: 100%;
+
+}
+
+.email input, .phone input{
+width: 100%;
+}
+.email , .phone {
+width: 48%;
+}
+.message textarea{
+  min-height: 100px;
+  /* width: 100%; */
+  padding-top: 20px;
+}
+.submit{
+  padding: 15px 30px;
+  background-color: #072ac8;
+  text-align-last:center ;
+}
+
+.btn-submit{
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
 
 
 
+/* ++++++++++++++++++++++++++++++++ */
+
+
+/* ++++++++++++++++++++++++++++++++ */
 
 
 
@@ -624,12 +764,28 @@ body {
       display: none;
       /* z-index: 1; */
     }
+
+    .empower{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .empower h1{
+      font-size: 40px;
+    }
+    .cards{
+      width: 100%;
+      max-width: 100%;
+    }
+
   }
 
 
 
 
 
-img {
+/* img {
     width: 350px;
-}
+} */
