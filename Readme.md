@@ -29,3 +29,20 @@
 
 - Continuar avanzando con secciones restantes.
 - Preguntar dudas pendientes en clase de miercoles
+
+### Miercoles
+
+#### Estado actual:
+
+- Se avanzó con seccion preguntas, pie de pagína y servicios.
+- Problema de posicionamiento de imagenes solucionado (hacer doc de leccion aprendida).
+
+#### Planificacion del día
+
+1. Finalizar secciones faltantes (CSS mejorar HTML si se require).
+
+
+    - Formulario
+    - Pagina redirigidas.
+
+2. Hacer la pagina Responsive Mobile

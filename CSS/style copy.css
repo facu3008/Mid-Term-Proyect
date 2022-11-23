@@ -24,8 +24,6 @@ body {
   }
 
   
-
- 
   /* h2 {
     vertical-align: center;
     text-align: center;
@@ -35,9 +33,7 @@ body {
     margin: 0;
     height: 100%;
   } 
-  
-
-  .top-nav {
+    .top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
