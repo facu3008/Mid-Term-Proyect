@@ -6,7 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
     
 }
 :root{
@@ -170,8 +170,8 @@ body {
     flex-wrap: wrap;
   }
   .emp-text h1{
-    color: var(--parrafosColor);
-    font-size: 4rem;
+    color: #292e47;
+    font-size: 50px;
     font-weight: bold;
     padding: 20px 10px;
 
@@ -458,6 +458,22 @@ body {
 .questions p{
   font-size: 17px;
   color: var(--parrafosColor);
+  margin-bottom: 40px;
+}
+
+.email-input{
+  width: 400px;
+  height: 60px;
+  padding-left: 20px;
+  font-size: 17px
+}
+
+.subscribe{
+  width: 200px;
+  height: 60px;
+  font-size: 17px;
+  background-color: blue;
+  color: white;
 }
 
 /* SECCION 7 : Footer */
@@ -517,6 +533,12 @@ body {
   font-size: 17px;
 
 }
+
+
+
+
+
+
 
 
 /* SecCION RESPONSIVE MOVIL */
