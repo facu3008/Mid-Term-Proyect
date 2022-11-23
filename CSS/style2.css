@@ -1,12 +1,15 @@
 /* google fonts import  - ROBOTO */
 @import url("'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
+
 /* CSS RESET */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* outline: 1px red solid; */
+    outline: 1px red solid;
     
 }
 :root{
@@ -29,12 +32,18 @@ body {
     /* outline: 1px red solid; */
   }
 
-
   
-  /* html, body {
+
+ 
+  /* h2 {
+    vertical-align: center;
+    text-align: center;
+  } */
+  
+  html, body {
     margin: 0;
     height: 100%;
-  }  */
+  } 
   
 
   .top-nav {
@@ -141,6 +150,8 @@ body {
     color: white;
   }
 
+/* ++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++ */
 
 
 /* SECCION 2 : EMPOWER */
@@ -149,7 +160,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 100px 0 50px 50px;
+    margin: 100px auto;
     
     /* width: 1200px; */
     /* padding: 0 50px; */
@@ -235,32 +246,34 @@ body {
 /* SECCION 3 : LOGOS CLIENTES */
 
 .logos{
-  margin: 30px 0;
+  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: stretch;
   /* padding: 0 50px; */
 }
 
 .img-logo {
+  /* justify-content: space-around; */
   width: 100px;
   margin: 20px 20px;
 }
-
 /* ++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 4 : Proyectos Recientes */
 
 .recent-projects{
+  
   display:  flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin: 100px 50px 0;
   align-items: stretch;
-}
+ }
 .heading{
   color: var(--parColor);
   margin-bottom: 40px;
@@ -271,8 +284,7 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   width: auto;
 }
 
@@ -301,6 +313,7 @@ body {
   width: 340px;
   height: 240px;
   flex-wrap: wrap;
+  
 }
 /* ++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++ */
@@ -308,9 +321,9 @@ body {
 /* SECCION 4 : Testimonio Clientes */
 .opinions{
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   height: 630px;
-  margin: 100px 0;
+  margin-top: 100px;
   background-color: #292e47;
   background-image: url(../IMG/project-assets/testimonial-section/orbit.png);
   background-position: 0px 0px;
@@ -339,7 +352,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
-  margin: 60px 0;
+  margin: 60px auto;
   line-height: 30px;
   max-width: 560px;
 }
@@ -428,10 +441,12 @@ body {
   flex-direction: column;
   align-items: center;
   /* justify-content: space-evenly; */
-  
+  margin: 100px 50px 0;
   align-items: stretch;
- 
-}
+ }
+  
+
+
 .services .heading{
   color: var(--titulosColor);
 }
@@ -440,7 +455,7 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: auto;
 }
 
@@ -474,13 +489,10 @@ body {
 .services-text h1{
   font-size: 24px;
 }
-.services-text .p{
-  margin: 30px 0;
-
-}
-.services-text .text-link{
+.services-text p{
   margin-top: 30px;
 }
+
 /* ++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++ */
 
@@ -502,7 +514,7 @@ body {
   color: var(--parrafosColor);
   margin-bottom: 40px;
 }
-._email{
+.email{
   position: relative;
 }
 .email-icon{
@@ -548,15 +560,14 @@ body {
   flex-wrap: wrap;
   padding: 0 10px;
   padding-bottom: 100px;
-  /* margin-top: 80px; */
-  margin: 80px 80px;
+  margin-top: 80px;
 }
 
 .content{
   display: flex;
   flex-direction: column;
-  width: 30%;
-  /* padding-left: 20px; */
+  width: 20%;
+  padding-left: 20px;
   
 }
 
@@ -564,7 +575,7 @@ body {
 .content-img{
   width: 80px;
   height: 50px;
-  margin: 10px 0;
+  margin: 10px;
   
   background-image: url(../IMG/project-assets/logos/circle.svg);
   background-position: 50% 50%;
@@ -578,13 +589,13 @@ body {
     grid-auto-columns: 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    align-items: center;
-    width: 50%;
+    width: 40%;
     /* margin: 0; */
     padding: 20px;
     /* border: 1px solid black; */
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: var(back-color);
+    background-color: var(back-color) 
+    
     /* grid-template-rows: ; */
 }
 .footer-link{
@@ -674,64 +685,17 @@ width: 48%;
 }
 
 
+
 /* ++++++++++++++++++++++++++++++++ */
+
+
 /* ++++++++++++++++++++++++++++++++ */
-
-/* PROYECTOS */
-
-.proyect {
- display: flex;
- flex-direction: column;
- max-width: 1100px;
- margin: 0 auto;
-  }
-  
-  .title h1{
-    font-size: 60px;
-    margin-top: 40px;
-    padding-bottom: 20px;
-  }
-
-  .paragraph{
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-end
-  }
-  .paragraph .p1 {
-    
-    color: #6b708d;
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .paragraph .p2 {
-    
-    color: #6b708d;
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-
-
-.proyect-descrip{
-  color: #292e47;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 0px;
-  text-align: justify;
-}
-
-.proyect-img {
-  width: 100%;
-  height: 444px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
 
 
 
 
 /* SecCION RESPONSIVE MOVIL */
-  @media (max-width: 700px) {
+  @media (max-width: 769px) {
     .menu-button-container {
       display: flex;
       /* margin: 50px 80px 0; */

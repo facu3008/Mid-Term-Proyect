@@ -37,12 +37,20 @@
 - Se avanzó con seccion preguntas, pie de pagína y servicios.
 - Problema de posicionamiento de imagenes solucionado (hacer doc de leccion aprendida).
 
+**_ Se configura Vercel para ver proyectos en la nube_**
+
 #### Planificacion del día
 
 1. Finalizar secciones faltantes (CSS mejorar HTML si se require).
 
-
-    - Formulario
-    - Pagina redirigidas.
+   - Formulario
+   - Pagina redirigidas.
 
 2. Hacer la pagina Responsive Mobile
+
+- Actualizacion:
+
+  - El formulario esta listo.
+  - Comenzado el diseño Responsive
+
+- Se realiza pagina estatica de proyectos
