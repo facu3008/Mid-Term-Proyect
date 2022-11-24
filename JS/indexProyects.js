@@ -10,23 +10,24 @@ const getExternalAPiInfo = () => {
     .then((response) => {
       let cards = "";
       let arrayCards = response.slice(0, 3);
-      arrayCards.forEach((element) => {
+      arrayCards.forEach((element, index) => {
         cards += ` <div class="item-">
             <div class="item-img">
               <img
-                src="../IMG/project-assets/projects-section/${element.id}.jpg"
+                src="../IMG/project-assets/projects-section/${index + 1}.jpg"
                 alt="simplify"
                 class="imgP"
               />
             </div>
             <div class="item-text">
-              <h1>${element.title.slice(0, 10)}</h1>
-              <p>${element.body.slice(0, 30)}...</p>
+              <h1>${element.title}</h1>
+              <p>${element.body}</p>
               <a href="../HTML/proyects.html" class="text-link">Learn More</a>
             </div>
           </div> `;
       });
-      document.querySelector(".cards").innerHTML += cards;
+      document.querySelector(".container-proyects").innerHTML += cards;
+      document.querySelector("item");
     });
 };
 getExternalAPiInfo();

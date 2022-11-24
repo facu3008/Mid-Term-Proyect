@@ -22,10 +22,10 @@ body {
     color: #1a1a1a;
     background-color: #f2f4fc;
     font-size: 16px;
-    
+    margin-left: 80px;
     max-width: 1200px;
-    margin: 0 auto;
-    
+    display: flex;
+    flex-direction: column
     /* outline: 1px red solid; */
   }
 
@@ -150,165 +150,46 @@ body {
 
 
 
-/* SECCION 2 : EMPOWER */
-  .empower{
-    display:  flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    /* margin: 100px 0 50px 50px; */
-    padding: 100px 0 0 
-  }
-  .emp-text{
-    
-    margin-right: 0%;
-    max-width: 530px;
-    display: flex;
-    justify-content:space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .emp-text h1{
-    color: #292e47;
-    line-height: 130%;
-    font-size: 50px;
-    font-weight: bold;
-    padding: 20px 10px;
-    margin-top: -80px;
-
-  }
-  .emp-text .text{
-    color: #6b708d;
-    font-size: 20px;
-    line-height: 150%;
-    padding: 20px 10px;
-    max-width: 435px;
-    
-  }
-  .empower-btn{
-    margin-top: 30px;
-  }
-  .empower-btn-1{
-  text-decoration: none;
-  color: #6b708d;
-  font-size: 17px;
-  font-weight: 500;
-  margin-right: 10px;
-  padding: 0px 20px 0px 10px;
-  /* margin: 60px 0; */
-
-}
-.empower-btn-2{
-  text-decoration: none;
-  background-color: #072ac8;
-  color: white;
-  font-size: 17px;
-  font-weight: 500;
-  padding: 10px 20px 10px 10px;
-  /* margin: 60px 0; */
-
-}
-
-  .emp-img{
-    width: 100%;
-    position: relative;
-  }
-  .emp-img-hero-image{
-    width: 100%;
-  
-  }
-
-  .card-1 {
-    background-image: url("../IMG/project-assets/hero-section/card-1.png");
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    /* display: none; */
-    /* z-index: 1; */
-  }
-  .card-2 {
-    background-image: url("../IMG/project-assets/hero-section/card-2.png");
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    position: absolute;
-    bottom: -10%;
-    right: -10%;
-    /* z-index: 1; */
-  }
-
-
-/* SECCION 3 : LOGOS CLIENTES */
-
-.logos{
-  margin: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  /* padding: 0 50px; */
-}
-
-.img-logo {
-  width: 100px;
-  margin: 20px 20px;
-}
-
-/* ++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 4 : Proyectos Recientes */
 
-.recent-projects{
+/* .recent-projects{
   display:  flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
+  margin: 100px ;
   padding: 0 30px;
   align-items: stretch;
-}
-.heading{
+} */
+/* .heading{
   color: #292e47;
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: bold;
-}
+} */
 
-.cards {
+/* .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
   
-  /* width: auto; */
-}
+} */
 
-.item-{
-  
+/* .item-{
   display: flex;
   width: auto;
   flex-direction: column;
-  
   justify-content: flex-start;
-}
-.item-text{
+} */
+/* .item-text{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px;
-}
-.item-text h1{
-  font-size: 24px;
-  max-width: 300px;
-}
-.item-text p, .item-text a {
-  padding-top: 20px;
-  max-width: 330px;
-}
+} */
+
 .imgP{
   width: 340px;
   height: 240px;
@@ -317,228 +198,43 @@ body {
 /* ++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++ */
 
-/* SECCION 4 : Testimonio Clientes */
-.opinions{
-  position: relative;
-  max-width: 1320px;
-  height: 630px;
-  margin-top: 200px ;
-  background-color: #292e47;
-  background-image: url(../IMG/project-assets/testimonial-section/orbit.png);
-  background-position: 0px 0px;
-  background-size: contain;
-  
-  /* margin: 0 50px; */
+
+.proyectos-recientes{
+  margin: 100px 50px 0;
 }
-.testimonios{
-  /* width: 60%; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  /* padding-bottom: 50px; */
-}
-.testimonios h3{
-  font-weight: bold;
-  color: #ecf7ff;
-  max-width: 400px;
+
+.proyectos-recientes h1{
+  margin-top: 30px;
   font-size: 40px;
-  text-align: center;
-  margin: 100px 0;
-  /* line-height: 30px; */
-}
-.testimonios p{
-  color: #ffc600;
-  margin: 0 auto;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-  margin: 0 auto;
-  line-height: 160%;
-  max-width: 560px;
-}
-.cliente{
-  display: flex;
-  align-items: center;
-
-
-}
-.cliente-img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-image: url(../IMG/project-assets/testimonial-section/profile.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 15px;
-}
-.cliente-info{
-  color: #a2d6f9;
-  font-size: 17px;
-}
-.cliente-position{
-  color: #ecf7ff;
-    font-size: 13px;
 }
 
-.emoji-top-left {
-  position: absolute;
-  background-image: url("../IMG/project-assets/testimonial-section/memoji-1.png");
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  margin-top: 5%;
-  margin-left: 10%;
-
-}
-.emoji-top-right {
-  position: absolute;
-  background-image: url("../IMG/project-assets/testimonial-section/memoji-4.png");
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  margin-top: 5%;
-  margin-right: 10%;
-}
-.emoji-bottom-left {
-  position: absolute;
-  background-image: url("../IMG/project-assets/testimonial-section/memoji-3.png");
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-}
-.emoji-bottom-right {
-  position: absolute;
-  background-image: url("../IMG/project-assets/testimonial-section/memoji-2.png");
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  margin-bottom: 5%;
-  margin-right: 10%;
-}
-
-/* ++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++ */
-
-/* SECCION 5 : Nuestros Servicios */
-
-
-/* .container-proyects {
+.container-proyects{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .card-proyects{
-  display: flex;
-  flex-direction: column;
+    margin-top: 20px;
 }
+
 .card-title{
+  color: #292e47;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 15px;
   font-size: 24px;
-  color: #292e47;
-  line-height: 115%;
-}
-.card-text{
-  font-size: 17px;
-  color: #292e47;
-  line-height: 115%; */
-
-
-
-
-.our-services{
-  margin: 100px 50px 0;
-  
-}
-
-.our-services h1{
-  margin-top: 30px;
-  font-size: 40px;
-}
-
-.container-services{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.services .heading{
-  color: #292e47;
-  margin-bottom: 40px;
-  font-size: 40px;
   font-weight: bold;
 }
-
-
-.services-flex{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: auto;
+.card-text{
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #292e47;
+    margin-left: 15px;
+}
+.text-link {
+    margin: 15px ;
 }
 
-.services-container{
-  display: flex;
-  width: auto;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-  /* height: auto; */
-  background-color: #fff;
-  /* border: 1px solid black; */
-  margin-bottom: 30px;
-}
-
-.services-icon img{
-  width: 80px;
-  height: 80px;
-  margin: 60px;
-  flex-wrap: wrap;
-}
-
-/* .services-text{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px;
-  max-width: 350px;
-} */
-.card-service-title{
-  font-size: 24px;
-}
-.card-service-text{
-  margin: 30px 0;
-  max-width: 350px;
-  text-align: justify;
-
-}
-.card-service-link{
-   margin-top: 30px;
-}
-.text-link{
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 500;
-  color: #072ac8;
-}
-/* ++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 6 : Questions */
 
@@ -790,47 +486,6 @@ width: 48%;
 }
 
 
-/* proyectos recientes  VERSION NUEV*/
-
-/* .proyectos-recientes{
-  margin: 100px 50px 0;
-  
-}
-
-.proyectos-recientes h1{
-  margin-top: 30px;
-  font-size: 40px;
-}
-
-.container-proyects{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.card-proyects{
-    margin-top: 20px;
-}
-
-.card-title{
-  color: #292e47;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  font-size: 24px;
-  font-weight: bold;
-}
-.card-text{
-    font-size: 17px;
-    margin-bottom: 25px;
-    color: #292e47;
-    margin-left: 15px;
-}
-.text-link {
-    margin: 15px ;
-}
- */
-
-
 
 
 /* SecCION RESPONSIVE MOVIL */
@@ -956,7 +611,10 @@ width: 48%;
       /* z-index: 1; */
     }
     
-    
+    .cards{
+      width: 100%;
+      max-width: 100%;
+    }
 
   /* LOGOS */
     .img-logo{
@@ -969,16 +627,13 @@ width: 48%;
     .heading{
       text-align: center;
     }
-    .cards, .container-services{
+    .cards{
       display: flex;
-      justify-content:center;
-      width: 100%;
-      max-width: 100%;
+      justify-content: flex-start;
     }
-    /* .item-img{
+    .item-img{
       display: flex;
-      
-    } */
+    }
     .item-text{
       display: flex;
       align-content: flex-start
@@ -987,31 +642,6 @@ width: 48%;
       width: 65vw;
       /* height: 240px; */
     }
-
-/* PROYECTOS RECIENTES */
-
-    .item-text{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 30px;
-    }
-    .item-text h1{
-      font-size: 24px;
-      max-width: 350px;
-    }
-    .item-text p, .item-text a {
-      padding-top: 20px;
-      max-width: 450px;
-    }
-    
-
-
-
-
-
-
 
     /* OPNINIONES */
 
@@ -1072,12 +702,6 @@ width: 48%;
     }
 
     
-
-
-
-
-
-    /* OPINIONES */
     .opinions{
       height: 450px;
     }
@@ -1097,17 +721,9 @@ width: 48%;
       display: none;
     }
 
-
-
-
-
-
     /* SERVICIOS */
     .services-container{
       flex-direction: row;
-    }
-    .our-services{
-      margin: 0;
     }
     .our-services h1{
       text-align: center;
