@@ -54,3 +54,9 @@
   - Comenzado el diseño Responsive
 
 - Se realiza pagina estatica de proyectos
+
+### Miercoles
+
+- Tareas del dia:
+  - Finalizar diseño responsive
+  - Manipular DOM por medio de API
