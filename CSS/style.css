@@ -149,15 +149,13 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 100px 0 50px 50px;
-    
-    /* width: 1200px; */
-    /* padding: 0 50px; */
+    /* margin: 100px 0 50px 50px; */
+    padding: 100px 0 0 
   }
   .emp-text{
     
     margin-right: 0%;
-    width: 45%;
+    max-width: 530px;
     display: flex;
     justify-content:space-between;
     flex-direction: column;
@@ -165,16 +163,18 @@ body {
   }
   .emp-text h1{
     color: #292e47;
+    line-height: 130%;
     font-size: 50px;
     font-weight: bold;
     padding: 20px 10px;
 
   }
   .emp-text .text{
-    color: var(--parColor);
-    font-size: 1.7rem;
+    color: #6b708d;
+    font-size: 14px;
+    line-height: 20px;
     padding: 20px 10px;
-    color: var(--parColor);
+    
   }
   .empower-btn{
     margin-top: 30px;
@@ -201,7 +201,7 @@ body {
 }
 
   .emp-img{
-    width: 45%;
+    width: 100%;
     position: relative;
   }
   .emp-img-hero-image{
@@ -262,7 +262,7 @@ body {
   align-items: stretch;
 }
 .heading{
-  color: var(--parColor);
+  color: #292e47;
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: bold;
@@ -308,9 +308,9 @@ body {
 /* SECCION 4 : Testimonio Clientes */
 .opinions{
   position: relative;
-  width: 1200px;
+  max-width: 1320px;
   height: 630px;
-  margin: 100px 0;
+  margin-top: 200px ;
   background-color: #292e47;
   background-image: url(../IMG/project-assets/testimonial-section/orbit.png);
   background-position: 0px 0px;
@@ -322,12 +322,14 @@ body {
   /* width: 60%; */
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 .testimonios h3{
   font-weight: bold;
   color: #ecf7ff;
+  max-width: 400px;
   font-size: 40px;
   text-align: center;
   margin: 100px 0;
@@ -336,11 +338,11 @@ body {
 .testimonios p{
   color: #ffc600;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   text-align: center;
-  margin: 60px 0;
-  line-height: 30px;
+  margin: 0 auto;
+  line-height: 160%;
   max-width: 560px;
 }
 .cliente{
@@ -423,18 +425,22 @@ body {
 
 /* SECCION 5 : Nuestros Servicios */
 .services{
+  
   margin: 100px 50px 0;
-  display:  flex;
+  /* display:  flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
-  
-  align-items: stretch;
- 
+  justify-content: space-evenly;
+    align-items: stretch; */
 }
+
 .services .heading{
-  color: var(--titulosColor);
+  color: #292e47;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
 }
+
 
 .services-flex{
 
@@ -451,7 +457,7 @@ body {
   justify-content: flex-start;
   
   /* height: auto; */
-  /* background-color: white; */
+  background-color: #fff;
   /* border: 1px solid black; */
   margin-bottom: 30px;
 }
@@ -731,10 +737,13 @@ width: 48%;
 
 
 /* SecCION RESPONSIVE MOVIL */
-  @media (max-width: 700px) {
+  @media (max-width: 991px) {
     .menu-button-container {
       display: flex;
       /* margin: 50px 80px 0; */
+    }
+    .btn-contact{
+      display: none;
     }
     .menu {
       position: absolute;
@@ -777,19 +786,55 @@ width: 48%;
       text-decoration: none;
       color: lightblue;
       font-size: 17px;
-    font-weight: 500;
+      font-weight: 500;
     }
-     
+
     .proy-serv{
       text-decoration: none;
       color: #6b708d;
       font-size: 17px;
-    font-weight: 500;
+      font-weight: 500;
     }
     .home:hover, .proy-serv:hover{
       color: blue;
   
     }
+  /* Empower seccion */
+
+    .empower{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+
+
+
+  .emp-text {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .emp-text h1 {
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 30px;
+  }
+
+  .empower .text{
+    max-width: 600px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 150%;
+  }
+  .empower-btn{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center
+  }
+
     .card-1 {
       background-image: url("../IMG/project-assets/hero-section/card-1.png");
       width: 200px;
@@ -813,26 +858,108 @@ width: 48%;
       display: none;
       /* z-index: 1; */
     }
-
-    .empower{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-    }
-
-    .empower h1{
-      font-size: 40px;
-    }
+    
     .cards{
       width: 100%;
       max-width: 100%;
     }
 
+  /* LOGOS */
+    .img-logo{
+      display: flex;
+    }
+    .img-logo-amazon{
+      display: none;
+    }
+    /* recent Proyects */
+    .heading{
+      text-align: center;
+    }
+    .cards{
+      display: flex;
+      justify-content: center
+    }
+    .item-img{
+      display: flex;
+    }
+    .item-text{
+      display: flex;
+      align-content: flex-start
+    }
+
+    /* OPNINIONES */
+
+    .opinions{
+      height: 500px;
+      margin-top: 60px;
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .testimonios h3{
+      max-width: 400px;
+      line-height: 150%;
+    }
+    .testimonios p{
+      margin-top: -70px;
+      margin-bottom: 70px;
+    }
+    
+    /* SERVICIOS */
+    .services-container{
+      flex-direction: row;
+    }
+    .services-text h1{
+      color: #292e47;
+      padding-bottom: 10px;
+    }
+    .services-text{
+      align-items: flex-start;
+      line-height: 160%;
+
+    }
+
+
+
   }
 
+  @media (max-width: 767px){
 
+    .opinions{
+      height: 450px;
+    }
+    .testimonios{
+      display: flex;
+      justify-content: space-around;
+      /* height: 100%; */
+    }
+    .testimonios h3{
+      margin-top: 30px;
+    }
+    .testimonios p{
+      margin-top: -º30px;
+      
+    }
+    .emoji-top-left, .emoji-top-right,.emoji-bottom-left, .emoji-bottom-right{
+      display: none;
+    }
 
+    /* SERVICIOS */
+    .services-container{
+      flex-direction: row;
+    }
+    .services-text h1{
+      color: #292e47;
+      padding-bottom: 10px;
+    }
+    .services-text{
+      align-items: flex-start;
+      line-height: 160%;
+
+    }
+
+  }
 
 
 /* img {
