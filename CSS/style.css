@@ -167,13 +167,15 @@ body {
     font-size: 50px;
     font-weight: bold;
     padding: 20px 10px;
+    margin-top: -80px;
 
   }
   .emp-text .text{
     color: #6b708d;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 150%;
     padding: 20px 10px;
+    max-width: 435px;
     
   }
   .empower-btn{
@@ -181,7 +183,7 @@ body {
   }
   .empower-btn-1{
   text-decoration: none;
-  color: var(--parColor);
+  color: #6b708d;
   font-size: 17px;
   font-weight: 500;
   margin-right: 10px;
@@ -258,7 +260,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 100px 50px 0;
+  margin: 100px ;
+  padding: 0 30px;
   align-items: stretch;
 }
 .heading{
@@ -271,9 +274,9 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* justify-content: space-evenly; */
-  width: auto;
+  justify-content:space-between;
+  
+  /* width: auto; */
 }
 
 .item-{
@@ -424,14 +427,44 @@ body {
 /* ++++++++++++++++++++++++++++++++ */
 
 /* SECCION 5 : Nuestros Servicios */
-.services{
-  
-  margin: 100px 50px 0;
-  /* display:  flex;
+
+
+/* .container-proyects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-proyects{
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-    align-items: stretch; */
+}
+.card-title{
+  font-size: 24px;
+  color: #292e47;
+  line-height: 115%;
+}
+.card-text{
+  font-size: 17px;
+  color: #292e47;
+  line-height: 115%; */
+
+
+
+
+.our-services{
+  margin: 100px 50px 0;
+  
+}
+
+.our-services h1{
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.container-services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .services .heading{
@@ -463,29 +496,37 @@ body {
 }
 
 .services-icon img{
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   margin: 60px;
   flex-wrap: wrap;
 }
 
-.services-text{
+/* .services-text{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px;
   max-width: 350px;
-}
-.services-text h1{
+} */
+.card-service-title{
   font-size: 24px;
 }
-.services-text .p{
+.card-service-text{
   margin: 30px 0;
+  max-width: 350px;
+  text-align: justify;
 
 }
-.services-text .text-link{
-  margin-top: 30px;
+.card-service-link{
+   margin-top: 30px;
+}
+.text-link{
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #072ac8;
 }
 /* ++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++ */
@@ -525,7 +566,7 @@ body {
 }
 
 .email-input{
-  width: 400px;
+  max-width: 400px;
   height: 60px;
   padding-left: 40px;
   font-size: 17px
@@ -564,6 +605,11 @@ body {
   width: 30%;
   /* padding-left: 20px; */
   
+}
+.content-text{
+  color: #6b708d;
+  font-size: 17px;
+  line-height: 150%;
 }
 
 
@@ -871,13 +917,13 @@ width: 48%;
     .img-logo-amazon{
       display: none;
     }
-    /* recent Proyects */
+    
     .heading{
       text-align: center;
     }
     .cards{
       display: flex;
-      justify-content: center
+      justify-content: flex-start;
     }
     .item-img{
       display: flex;
@@ -885,6 +931,10 @@ width: 48%;
     .item-text{
       display: flex;
       align-content: flex-start
+    }
+    .imgP{
+      width: 65vw;
+      /* height: 240px; */
     }
 
     /* OPNINIONES */
@@ -919,13 +969,33 @@ width: 48%;
       line-height: 160%;
 
     }
-
-
-
+  
+    /* FOOOTER */
+    .footer{
+      margin-top: 60px;
+    }
+    .recent-projects{
+      margin: 0;
+      margin-top: 100px;
+      
+    }
+    
+ 
   }
 
   @media (max-width: 767px){
 
+    /* recent Proyects */
+    .body{
+      margin: 0;
+      padding: 0;
+    }
+    .recent-projects{
+      margin: 0;
+      padding: 0;
+    }
+
+    
     .opinions{
       height: 450px;
     }
@@ -949,19 +1019,113 @@ width: 48%;
     .services-container{
       flex-direction: row;
     }
-    .services-text h1{
+    .our-services h1{
+      text-align: center;
+    }
+    .services-icon img{
+      width: 50px;
+      
+      margin: 40px 10px;
+    }
+    .card-services{
+      align-items: flex-start
+    }
+    .card-service-title{
       color: #292e47;
       padding-bottom: 10px;
     }
-    .services-text{
+    .card-service-text{
       align-items: flex-start;
       line-height: 160%;
 
     }
+    .container-proyects {
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-proyects{
+      margin-top: 25px;
+    }
+
+    .card-proyects-img{
+      width: auto;
+    }
+    .imgP{
+      width: 80vw;
+      height: 240px;
+    }
+
+    /* EMAIL */
+    .email-input {
+      width: 100%;
+      max-width: 100%;
+    }
+    .subscribe{
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+
+    /* FOOOTER */
+    *.footer{
+      margin: none;
+      padding: none;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+     
+    }
+
+    .footer-links{
+      width: 90vw;
+      
+      margin-top: 20px;
+    }
+   
+    /* .content-text{
+      text-align: center;
+      width: 60vw;
+      margin: auto;
+    } */
+
 
   }
 
+  /* .proyectos-recientes h1{
+    margin: 30px;
+    font-size: 40px;
+  }
 
-/* img {
-    width: 350px;
+.container-proyects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-proyects{
+  display: flex;
+  flex-direction: column;
+}
+.card-title{
+  font-size: 24px;
+  color: #292e47;
+  line-height: 115%;
+}
+.card-text{
+  font-size: 17px;
+  color: #292e47;
+  line-height: 115%;
 } */
+
+
+
+
+
+
+
+
