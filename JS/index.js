@@ -21,7 +21,7 @@ const getExternalAPiInfo = () => {
             </div>
             <div class="item-text">
               <h1>${element.title.slice(0, 10)}</h1>
-              <p>${element.body.slice(0, 30)}...</p>
+              <p>${element.body.slice(0, 40)}...</p>
               <a href="../HTML/proyects.html" class="text-link">Learn More</a>
             </div>
           </div> `;
@@ -30,7 +30,7 @@ const getExternalAPiInfo = () => {
     });
 };
 getExternalAPiInfo();
-// part 6 - Apuntamos mediante un dom querySelector y le asignamos un event listener addEventListener() para pasarle la funcion que nos creamos arriba.
+
 // document
 //   .querySelector("#getExternalAPiInfo")
 //   .addEventListener("click", getExternalAPiInfo);

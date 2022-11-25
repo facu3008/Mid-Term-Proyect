@@ -55,8 +55,16 @@
 
 - Se realiza pagina estatica de proyectos
 
-### Miercoles
+### Jueves
 
 - Tareas del dia:
   - Finalizar diseño responsive
   - Manipular DOM por medio de API
+
+### Viernes
+
+- Tareas del dia:
+  - Limpieza de código
+  - Finalizar API para formulario de contacto
+  - Revision general de estado de pagina web
+  - Preparar presentacion
