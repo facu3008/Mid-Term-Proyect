@@ -608,12 +608,13 @@ body {
     grid-row-gap: 16px;
     align-items: center;
     width: 50%;
-    /* margin: 0; */
+    
     padding: 20px;
-    /* border: 1px solid black; */
+    
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(back-color);
-    /* grid-template-rows: ; */
+    justify-content: center;
+    align-items: center;
 }
 .footer-link{
   width: 50px;
@@ -1145,9 +1146,9 @@ input:hover{
     }
 
     .footer-links{
-      width: 90vw;
-      
-      margin-top: 20px;
+      /* width: 90vw; */
+      margin: 20px auto
+      /* margin-top: 20px; */
     }
    
     
