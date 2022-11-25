@@ -607,7 +607,7 @@ body {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     align-items: center;
-    width: 50%;
+    width: 60%;
     
     padding: 20px;
     
@@ -1146,9 +1146,9 @@ input:hover{
     }
 
     .footer-links{
-      /* width: 90vw; */
+      
       margin: 20px auto
-      /* margin-top: 20px; */
+      
     }
    
     
