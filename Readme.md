@@ -66,7 +66,11 @@
 ### Viernes
 
 - Tareas del dia:
+
   - Limpieza de código
   - Finalizar API para formulario de contacto
   - Revision general de estado de pagina web
   - Preparar presentacion
+
+- link presentacion:
+  - https://docs.google.com/presentation/d/1ExnRBIiMIFyLarn5lM0308p5f95-zvx-Y4lUvJHdbuA/edit#slide=id.p

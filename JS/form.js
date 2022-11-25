@@ -39,4 +39,4 @@ let formulario = document
   .querySelector("#submitForm")
   .addEventListener("submit", submitForm);
 
-document.getElementById("data").innerHTML = formData;
+// document.getElementById("data").innerHTML = formData;

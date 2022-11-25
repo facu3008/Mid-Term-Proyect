@@ -872,7 +872,8 @@ input:hover{
   }
 
     .card-1 {
-      
+      width: 250px;
+      height: 250px;
       position: absolute;
       top: 10%;
       left: 5%;
@@ -880,6 +881,8 @@ input:hover{
     }
 
     .card-2 {
+      width: 250px;
+      height: 250px;
       position: absolute;
       bottom: 0%;
       right: 0%;
