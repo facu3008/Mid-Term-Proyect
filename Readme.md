@@ -39,6 +39,8 @@
 
 **_ Se configura Vercel para ver proyectos en la nube_**
 
+- https://mid-term-proyect.vercel.app/
+
 #### Planificacion del día
 
 1. Finalizar secciones faltantes (CSS mejorar HTML si se require).

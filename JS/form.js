@@ -9,7 +9,7 @@ const submitForm = (preventForm) => {
   let phone = document.querySelector("#phone").value;
   let message = document.querySelector("#message").value;
 
-  if (fullname == "" || phone == "" || message == "") {
+  if (fullname == "" || phone === "" || message == "") {
     alert("Please complete all data");
   } else {
     alert(
@@ -31,10 +31,12 @@ const submitForm = (preventForm) => {
       }),
     })
       .then((response) => response.json())
-      .then((formData) => console.log(formData))
+      .then((formData) => console.table(formData))
       .catch((error) => console.log(error));
   }
 };
 let formulario = document
   .querySelector("#submitForm")
   .addEventListener("submit", submitForm);
+
+document.getElementById("data").innerHTML = formData;
