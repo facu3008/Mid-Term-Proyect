@@ -1,11 +1,5 @@
-// crear una funcion fetch
-// traer el objeto desde api
-
-// Llamar a una API externa!
 const getExternalInfo = () => {
-  // Part 1 - Llamamos al recurso
   fetch("https://jsonplaceholder.typicode.com/posts")
-    // Part 2 - pasamos una promesa y recibimos la info del recurso y manipluamos/limpiams segun el tipo de recurso.
     .then((response) => response.json())
     .then((response) => {
       let data = "";
@@ -39,9 +33,7 @@ const getExternalInfo = () => {
     });
 };
 getExternalInfo();
-// part 6 - Apuntamos mediante un dom querySelector y le asignamos un event listener addEventListener() para pasarle la funcion que nos creamos arriba.
-// document
-//   .querySelector("#getExternalAPiInfo")
-//   .addEventListener("click", getExternalAPiInfo);
 
-// -------
+function respuesta() {
+  alert("This botton doesnt WorK!!");
+}

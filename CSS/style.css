@@ -28,15 +28,7 @@ body {
     
     /* outline: 1px red solid; */
   }
-
-
-  
-  /* html, body {
-    margin: 0;
-    height: 100%;
-  }  */
-  
-
+ 
   .top-nav {
     display: flex;
     flex-direction: row;
@@ -224,7 +216,7 @@ body {
     height: 200px;
     background-size: cover;
     position: absolute;
-    top: 0%;
+    top: 5%;
     left: 0%;
     /* display: none; */
     /* z-index: 1; */
@@ -235,8 +227,8 @@ body {
     height: 200px;
     background-size: cover;
     position: absolute;
-    bottom: -10%;
-    right: -10%;
+    bottom: -5%;
+    right: -5%;
     /* z-index: 1; */
   }
 
@@ -360,9 +352,9 @@ body {
 .cliente{
   display: flex;
   align-items: center;
-
-
+  margin-top: 180px;
 }
+
 .cliente-img{
   width: 50px;
   height: 50px;
@@ -555,7 +547,7 @@ body {
 }
 .questions p{
   font-size: 17px;
-  color: var(--parrafosColor);
+  color: #6b708d;
   margin-bottom: 40px;
 }
 ._email{
@@ -701,6 +693,7 @@ flex-direction: column;
 }
 .name input, .message textarea {
 width: 100%;
+font-size: 16px;
 }
 .email-phone{
 display: flex;
@@ -711,6 +704,7 @@ width: 100%;
 
 .email input, .phone input{
 width: 100%;
+font-size: 16px;
 }
 .email , .phone {
 width: 48%;
@@ -718,7 +712,7 @@ width: 48%;
 .message textarea{
   min-height: 100px;
   /* width: 100%; */
-  padding-top: 20px;
+  padding-top: 16px;
 }
 .submit{
   padding: 15px 30px;
@@ -726,14 +720,23 @@ width: 48%;
   text-align-last:center ;
 }
 
-.btn-submit{
-  text-decoration: none;
+input:hover{
+  cursor: pointer;
+}
+
+.btn-submit input{
+  
   font-size: 17px;
   text-align: center;
   align-items: center;
   color: white;
   width: 100%;
+  height: 90px;
+  padding: 15px 30px;
+  background-color: #072ac8;
+  border: none;
 }
+
 
 
 /* ++++++++++++++++++++++++++++++++ */
@@ -933,27 +936,17 @@ width: 48%;
   }
 
     .card-1 {
-      background-image: url("../IMG/project-assets/hero-section/card-1.png");
-      width: 200px;
-      height: 200px;
-      background-size: cover;
+      
       position: absolute;
-      bottom: 390px;
-      right: 360px;
-      display: none;
+      top: 10%;
+      left: 5%;
       /* z-index: 1; */
     }
 
     .card-2 {
-      background-image: url("../IMG/project-assets/hero-section/card-2.png");
-      width: 200px;
-      height: 200px;
-      background-size: cover;
       position: absolute;
-      bottom: -20px;
-      right: 0px;
-      display: none;
-      /* z-index: 1; */
+      bottom: 0%;
+      right: 0%;
     }
     
     
@@ -1032,10 +1025,24 @@ width: 48%;
       margin-bottom: 70px;
     }
     
+    .cliente{
+     
+      margin-top:0px;
+    }
+
+
+
+
     /* SERVICIOS */
+
+    /* .our-services{
+      
+      justify-content: center;
+    } */
     .services-container{
       flex-direction: row;
     }
+    
     .services-text h1{
       color: #292e47;
       padding-bottom: 10px;
@@ -1043,7 +1050,12 @@ width: 48%;
     .services-text{
       align-items: flex-start;
       line-height: 160%;
+    }
 
+    .container-services{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   
     /* FOOOTER */
@@ -1056,11 +1068,29 @@ width: 48%;
       
     }
     
+
+        /* PROYECTOS */
+
+    
+
+        .paragraph, .title h1 {
+          margin: 0 15px;
+        }
+    
+
  
   }
 
   @media (max-width: 767px){
 
+
+
+
+
+    .card-1, .card-2 {
+      display: none;
+    }
+    
     /* recent Proyects */
     .body{
       margin: 0;
@@ -1070,9 +1100,14 @@ width: 48%;
       margin: 0;
       padding: 0;
     }
+    .item{
 
-    
-
+      display: flex;
+      width: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
 
 
@@ -1106,8 +1141,11 @@ width: 48%;
     .services-container{
       flex-direction: row;
     }
-    .our-services{
-      margin: 0;
+   
+    .container-services{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .our-services h1{
       text-align: center;
@@ -1146,6 +1184,12 @@ width: 48%;
     }
 
     /* EMAIL */
+
+    .email-icon{
+      left: 2%;
+      top: 11%;
+
+    }
     .email-input {
       width: 100%;
       max-width: 100%;

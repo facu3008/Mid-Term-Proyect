@@ -20,7 +20,11 @@
       </label>
       <ul class="menu">
         <li><a href="#Home" class="home">Home</a></li>
-        <li><a href="#Proyects" class="proy-serv">Proyects</a></li>
+        <li>
+          <a href="./HTML/proyects.html" target="_blank" class="proy-serv"
+            >Proyects</a
+          >
+        </li>
 
         <li><a href="#Services" class="proy-serv">Services</a></li>
       </ul>
@@ -193,16 +197,12 @@
           "Circle helped us through every stage of our startup. We really
           enjoyed working with you."
         </p>
-        <div>
+
+        <div class="cliente">
+          <div class="cliente-img"></div>
           <div>
-            <img src="" alt="" />
-          </div>
-          <div class="cliente">
-            <div class="cliente-img"></div>
-            <div>
-              <div class="cliente-info">Kristin Watson</div>
-              <div class="cliente-position">Booking.com</div>
-            </div>
+            <div class="cliente-info">Kristin Watson</div>
+            <div class="cliente-position">Booking.com</div>
           </div>
         </div>
       </div>
@@ -340,7 +340,12 @@
             placeholder="Enter your email"
             required
           />
-          <input type="submit" value="Suscribe" class="subscribe" />
+          <input
+            type="submit"
+            value="Suscribe"
+            class="subscribe"
+            onclick="respuesta()"
+          />
         </form>
       </div>
     </div>
@@ -362,6 +367,5 @@
     </footer>
 
     <script src="../JS/index.js"></script>
-    <!-- <script src="../JS/indexProyects.js"></script> -->
   </body>
 </html>

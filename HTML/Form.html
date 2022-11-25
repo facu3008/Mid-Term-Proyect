@@ -19,7 +19,7 @@
         <div class="menu-button"></div>
       </label>
       <ul class="menu">
-        <li><a href="../index.html" target="_blank" class="home">Home</a></li>
+        <li><a href="../index.html" class="home">Home</a></li>
         <li><a href="#Proyects" class="proy-serv">Proyects</a></li>
 
         <li><a href="#Services" class="proy-serv">Services</a></li>
@@ -31,31 +31,48 @@
       <div class="titulo">
         <h1>Contact Us</h1>
       </div>
-      <form action="">
+      <form action="" id="submitForm">
         <div class="name">
-          <label for="lname">Full Name *</label><br />
-          <input type="text" placeholder="Enter your full name" />
+          <label for="fullname">Full Name *</label><br />
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            name="fullname"
+            id="fullname"
+          />
         </div>
         <div class="email-phone">
           <div class="email">
-            <label for="lname">Email</label><br />
-            <input type="text" placeholder="Enter your email" />
+            <label for="email">Email</label><br />
+            <input
+              type="text"
+              placeholder="Enter your email"
+              name="email"
+              id="email"
+            />
           </div>
           <div class="phone">
-            <label for="lname">Phone</label><br />
-            <input type="text" placeholder="Enter your phone" />
+            <label for="phone">Phone</label><br />
+            <input
+              type="text"
+              placeholder="Enter your phone"
+              name="phone"
+              id="phone"
+            />
           </div>
         </div>
         <div class="message">
-          <label for="lname">Message *</label><br />
+          <label for="message">Message *</label><br />
           <textarea
             rows="5"
             class="message-place"
             placeholder="Write your message here..."
+            name="message"
+            id="message"
           ></textarea>
         </div>
-        <div class="submit">
-          <a href="#" class="btn-submit">Submit</a>
+        <div class="btn-submit">
+          <input type="submit" value="Submit" />
         </div>
       </form>
     </div>
@@ -76,5 +93,7 @@
         <div><a href="#" class="footer-link">Privacy Policy</a></div>
       </div>
     </footer>
+
+    <script src="../JS/form.js"></script>
   </body>
 </html>
